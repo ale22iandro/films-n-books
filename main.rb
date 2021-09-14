@@ -25,6 +25,7 @@ new_params["amount"] = gets.to_i
 new_product.show_params.each do |param|
 
   puts "#{param}?"
+
   new_params[param]=gets.chomp
 
 end
