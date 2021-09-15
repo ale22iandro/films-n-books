@@ -1,5 +1,5 @@
 class Film < Product
-
+  attr_accessor :price
   def initialize(year = "", director = "")
     super
     @year = year
