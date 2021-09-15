@@ -12,7 +12,7 @@ class Film < Product
 
   def to_s
     "Фильм #{@title} снят в #{@year} году, режиссер #{@director}\n
-Стоит #{@price} руб. \nНа складе есть #{@amount} экземляров"
+Стоит #{@price} руб. \nНа складе есть #{@amount} экземляров\n"
   end
 
   def add_params(params)

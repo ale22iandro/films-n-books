@@ -7,8 +7,5 @@ class Product
   def self.product_types
     [Film, Book]
   end
-  # def self.create(product_type)
-  #   product_types[product_type].new
-  # end
 
 end

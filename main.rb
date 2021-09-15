@@ -1,7 +1,9 @@
 require './product.rb'
 require './book.rb'
 require './film.rb'
-
+require './productcollection.rb'
+collection = ProductCollection.new
+loop do
 puts "Хотите что-то добавить?"
 
 Product.product_types.each_with_index do |type, index|
@@ -31,4 +33,7 @@ new_product.show_params.each do |param|
 end
 
 new_product.add_params(new_params)
-puts new_product
+collection.add_product(new_product)
+puts collection.to_a
+# puts new_product
+end

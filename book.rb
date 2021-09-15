@@ -10,7 +10,7 @@ class Book < Product
   end
   def to_s
     "Книга #{@title} в жанре #{@genre}, автор #{@writer}\n
-Стоит #{@price} руб. \nНа складе есть #{@amount} экземляров"
+Стоит #{@price} руб. \nНа складе есть #{@amount} экземляров\n"
   end
   def add_params(params)
     @price = params["price"]
